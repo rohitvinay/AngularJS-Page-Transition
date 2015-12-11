@@ -1,0 +1,261 @@
+/* app css stylesheet */
+html{
+  background: #000;
+}
+
+.kylo p{
+    font-family: 'Helvetica';
+    font-size: 7em;
+    font-weight: bold;
+    padding: 0 50px;
+    color: #fff;
+    line-height: 0.8em;
+}
+.rey p{
+    font-family: 'Helvetica';
+    font-size: 5em;
+    font-weight: bold;
+    padding: 0 50px;
+    color: #fff;
+    line-height: 0.8em;
+}
+.finn p{
+    font-family: 'Helvetica';
+    font-size: 5em;
+    font-weight: bold;
+    padding: 0 50px;
+    color: #fff;
+    line-height: 0.8em;
+}
+.poe p{
+    font-family: 'Helvetica';
+    font-size: 5em;
+    font-weight: bold;
+    padding: 0 150px;
+    color: #fff;
+    line-height: 0.8em;
+}
+.phasma p{
+    font-family: 'Helvetica';
+    font-size: 5em;
+    font-weight: bold;
+    padding: 0 50px;
+    color: #fff;
+    line-height: 0.8em;
+}
+.menu {
+    list-style: none;
+    position: fixed;
+    right: 2%;
+    z-index: 10000;
+
+}
+.logo {
+    list-style: none;
+    position: fixed;
+    left: 2%;
+    z-index: 10000;
+    width: 16%;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.counter{
+  list-style: none;
+    position: fixed;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    bottom:0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.counter ul {
+  list-style: none;
+}
+.counter ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 0 2%;
+  color: #fff;
+}
+.counter ul li span {
+  font-size: 42px;
+  font-weight: bold;
+}
+.counter ul li p{
+  margin: 0;
+  }
+
+.menu > li {
+  float: left;
+  margin: 0 10px;
+}
+
+.menu > li > a{
+  bottom: 0;
+    display: flex;
+    height: 135%;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: helvetica;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.page{
+      height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.kylo{
+    justify-content: flex-start;
+    background: url(img/kylo.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.rey{
+    justify-content: flex-end;
+    background: url(img/rey.jpg);
+    background-size: cover;
+    background-position: top;
+    align-items: flex-end;
+}
+.finn{
+    justify-content: flex-end;
+    background: url(img/finn.jpg);
+    background-size: cover;
+    background-position: top;
+    align-items: flex-end;
+}
+.poe{
+    justify-content: flex-end;
+    background: url(img/poe.jpg);
+    background-size: cover;
+    background-position: top;
+    align-items: flex-end;
+}
+.phasma{
+    justify-content: flex-end;
+    background: url(img/phasma.jpg);
+    background-size: cover;
+    background-position: top;
+    align-items: center;
+}
+.thumb{
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.6), inset 0px 1px 1px 1px rgba(255,255,255,0.7);
+  -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+.thumb:hover{
+  width: 5em;
+  height: 5em;
+  }
+.kylo-thumb{
+    background: url(img/kylo-thumb.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.rey-thumb{
+    background: url(img/rey-thumb.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.finn-thumb{
+    justify-content: flex-end;
+    background: url(img/finn-thumb.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.poe-thumb{
+    justify-content: flex-end;
+    background: url(img/poe-thumb.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.phasma-thumb{
+    justify-content: flex-end;
+    background: url(img/phasma-thumb.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@-webkit-keyframes ng-enter {
+  from {
+    margin-left: -100%;
+    width: 100%;
+    opacity: 0;
+  }
+
+  to {
+   margin-left: 0;
+   width: 100%;
+   opacity: 1;
+  }
+}
+
+@keyframes ng-enter {
+  from {
+    margin-left: -100%;
+    width: 100%;
+    opacity: 0;
+  }
+
+  to {
+   margin-left: 0;
+   width: 100%;
+   opacity: 1;
+  }
+}
+
+@-webkit-keyframes ng-leave {
+ from {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  to {
+   margin-left: 100%;
+   width: 100%;
+  }
+}
+
+@keyframes ng-leave {
+  from {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  to {
+   margin-left: 100%;
+   width: 100%;
+  }
+}
+
+/*.ng-enter {
+  animation: rotateInDownLeft 1s both ease-in; z-index: 8888;
+  animation-delay:0.8s;
+
+}
+.ng-leave {
+  animation: rotateOutUpRight 1s both ease-in; z-index: 9999;
+}*/
+.ng-enter {
+  animation: slideInLeft 1.5s both ease-in; z-index: 8888;
+  animation-delay:0.3s;
+
+}
+.ng-leave {
+  animation: slideOutRight 1s both ease-in; z-index: 9999;
+}

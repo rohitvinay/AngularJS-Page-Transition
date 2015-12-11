@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<div class="logo">
+  <img src="img/logo.png">
+</div>
+  <ul class="menu">
+    <li class="thumb kylo-thumb"><a href="#/kylo" >kylo</a></li>
+    <li class="thumb rey-thumb"><a href="#/rey">rey</a></li>
+    <li class="thumb finn-thumb"><a href="#/finn">finn</a></li>
+    <li class="thumb poe-thumb"><a href="#/poe">poe</a></li>
+    <li class="thumb phasma-thumb"><a href="#/phasma">phasma</a></li>
+  </ul>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view ></div>
+
+  <div class="counter">
+    <ul class="countdown">
+      <li>
+        <p class="timeRefDays"></p>
+        <span class="days"></span>
+        
+      </li>
+      <li>
+        <p class="timeRefHours"></p>
+        <span class="hours"></span>
+        
+      </li>
+      <li>
+        <p class="timeRefMinutes"></p>
+        <span class="minutes"></span>
+        
+      </li>
+      <li>
+        <p class="timeRefSeconds"></p>
+        <span class="seconds"></span>
+        
+      </li>
+  </ul>
+  </div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="index.js"></script>
+  <script src="kylo/kylo.js"></script>
+  <script src="rey/rey.js"></script>
+  <script src="finn/finn.js"></script>
+  <script src="poe/poe.js"></script>
+  <script src="phasma/phasma.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
